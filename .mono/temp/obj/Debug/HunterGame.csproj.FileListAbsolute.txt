@@ -1,8 +1,0 @@
-/Users/misha/HunterGame/.mono/temp/bin/Debug/HunterGame.dll
-/Users/misha/HunterGame/.mono/temp/bin/Debug/HunterGame.pdb
-/Users/misha/HunterGame/.mono/temp/obj/Debug/HunterGame.AssemblyInfoInputs.cache
-/Users/misha/HunterGame/.mono/temp/obj/Debug/HunterGame.AssemblyInfo.cs
-/Users/misha/HunterGame/.mono/temp/obj/Debug/HunterGame.csproj.CoreCompileInputs.cache
-/Users/misha/HunterGame/.mono/temp/obj/Debug/HunterGame.dll
-/Users/misha/HunterGame/.mono/temp/obj/Debug/HunterGame.pdb
-/Users/misha/HunterGame/.mono/temp/obj/Debug/HunterGame.csprojAssemblyReference.cache
