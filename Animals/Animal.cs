@@ -13,10 +13,10 @@ namespace HunterGame.Animals
 
         public override void _Ready()
         {
-            Population = GetNode<Population.Population>("root/Population");
+            Population = GetNode<Population.Population>("/root/Population");
         }
 
-        protected virtual void GracefulDeath()
+        public virtual void GracefulDeath()
         {
             QueueFree();
         }

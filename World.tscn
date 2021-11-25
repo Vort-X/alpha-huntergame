@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Animals/Wolf/WolfPopulator.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Animals/Rabbit/RabbitPopulator.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Animals/Deer/DeerPopulator.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Hunter/Hunter.tscn" type="PackedScene" id=4]
 
 [node name="World" type="Node2D"]
 
@@ -17,3 +18,17 @@ Amount = 2
 [node name="DeerPopulator" parent="." instance=ExtResource( 3 )]
 position = Vector2( 157.687, 584.882 )
 Amount = 4
+
+[node name="Hunter" parent="." instance=ExtResource( 4 )]
+position = Vector2( 584.18, 386.865 )
+collision_layer = 2
+MaxSpeed = 75.0
+
+[node name="Sprite" parent="Hunter" index="0"]
+position = Vector2( 0, 2.61212 )
+
+[node name="Rifle" parent="Hunter" index="1"]
+Ammo = 12
+ReloadTime = 1.0
+
+[editable path="Hunter"]

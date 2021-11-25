@@ -33,7 +33,7 @@ namespace HunterGame.Animals.Wolf
 					.Target(GlobalPosition, Velocity));
 		}
 
-		protected override void GracefulDeath()
+		public override void GracefulDeath()
 		{
 			Population.RemovePredator(this);
 			base.GracefulDeath();

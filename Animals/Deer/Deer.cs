@@ -34,7 +34,7 @@ namespace HunterGame.Animals.Deer
 					.Target(GlobalPosition, Velocity));
 		}
 
-		protected override void GracefulDeath()
+		public override void GracefulDeath()
 		{
 			Population.RemovePrey(this);
 			base.GracefulDeath();
