@@ -18,25 +18,12 @@ namespace HunterGame.Animals.Wolf
 
 			base._Ready();
 		}
-
-		public override void _PhysicsProcess(float delta)
-		{
-			var desired = ChainOfTargets();
-
-			Velocity = MoveAndSlide(Velocity + (desired * MaxSpeed - Velocity) / Mass);
-		}
-
-		private Vector2 ChainOfTargets()
+		
+		protected override Vector2 ChainOfTargets()
 		{
 			return _avoidCliffBehaviour
 				.Target(GlobalPosition, _wanderBehaviour
 					.Target(GlobalPosition, Velocity));
-		}
-
-		public override void GracefulDeath()
-		{
-			Population.RemovePredator(this);
-			base.GracefulDeath();
 		}
 	}
 }

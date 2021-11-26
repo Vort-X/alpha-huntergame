@@ -10,9 +10,9 @@ namespace HunterGame.Animals.Population
 		private List<Predator> _predators;
 		private List<Prey> _preys;
 
-		public ReadOnlyCollection<Animal> Animals => _animals.AsReadOnly();
-		public ReadOnlyCollection<Predator> Predators => _predators.AsReadOnly();
-		public ReadOnlyCollection<Prey> Preys => _preys.AsReadOnly();
+		public List<Animal> Animals => _animals;
+		public List<Predator> Predators => _predators;
+		public List<Prey> Preys => _preys;
 
 		public override void _Ready()
 		{

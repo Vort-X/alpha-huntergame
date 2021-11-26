@@ -4,3 +4,5 @@
 
 [node name="Wander" type="Node"]
 script = ExtResource( 1 )
+WonderDistance = 200.0
+WonderRadius = 100.0

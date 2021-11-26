@@ -18,6 +18,7 @@ config/icon="res://icon.png"
 
 Cliff="*res://Terrain/Cliff.tscn"
 Population="*res://Animals/Population/Population.tscn"
+GameStateManager="*res://GameState/GameStateManager.cs"
 
 [display]
 

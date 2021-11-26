@@ -7,18 +7,18 @@ namespace HunterGame.Animals
         [Export] public float MaxSpeed { get; set; } = 100f;
         [Export] public float Mass { get; set; } = 1f;
 	
-        protected Vector2 Velocity = Vector2.Up;
-        
-        protected Population.Population Population { get; private set; }
+        protected Vector2 Velocity = Vector2.Zero;
 
-        public override void _Ready()
+        public override void _PhysicsProcess(float delta)
         {
-            Population = GetNode<Population.Population>("/root/Population");
+            var desired = ChainOfTargets();
+
+            Velocity = MoveAndSlide(Velocity + (desired * MaxSpeed - Velocity) / Mass);
         }
 
-        public virtual void GracefulDeath()
+        protected virtual Vector2 ChainOfTargets()
         {
-            QueueFree();
+            return Vector2.Zero;
         }
     }
 }

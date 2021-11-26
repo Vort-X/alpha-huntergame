@@ -45,4 +45,9 @@ public class Cliff : Sprite
 	{
 		return y + DangerDistance > _bottomY;
 	}
+
+	public bool IsOnCliff(Vector2 position)
+	{
+		return (position.y < _bottomY && position.y > _topY) && (position.x > _leftX && position.x < _rightX);
+	}
 }
