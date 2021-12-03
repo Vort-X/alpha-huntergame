@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="947e4883-87bc-4f3c-87fe-92b92f887b93" name="Changes" comment="Added Hunter and shooting mechanic.">
-      <change afterPath="$PROJECT_DIR$/DieOnOutbounds.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameState/GameStateManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Animals/Animal.tscn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DieOnOutbounds.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HunterGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HunterGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animals/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Animal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animals/Deer/Deer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Deer/Deer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animals/Deer/Deer.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Deer/Deer.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animals/Population/Population.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Population/Population.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animals/Rabbit/Rabbit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Rabbit/Rabbit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animals/Rabbit/Rabbit.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Rabbit/Rabbit.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animals/Wolf/Wolf.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Wolf/Wolf.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animals/Wolf/Wolf.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Wolf/Wolf.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Behaviours/Wander.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Behaviours/Wander.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DieOnHit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DieOnHit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hunter/Hunter.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Hunter/Hunter.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Terrain/Cliff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Terrain/Cliff.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameState/GameStateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameState/GameStateManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +27,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/misha/HunterGame/Animals/Animal.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/misha/HunterGame/GameState/GameStateManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/92218043474744ea9d64d27064c35dcb46b600/A3/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/822117b834e54013b45274efa5d7ea92251200/e7/2b95711a/CircleShape2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/822117b834e54013b45274efa5d7ea92251200/43/4d7ecbd3/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
@@ -63,6 +51,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Start and Debug.Player">
@@ -107,6 +96,7 @@
       <workItem from="1637263291651" duration="16794000" />
       <workItem from="1637494541237" duration="21125000" />
       <workItem from="1637780896101" duration="10536000" />
+      <workItem from="1638299007437" duration="970000" />
     </task>
     <task id="LOCAL-00001" summary="Init.">
       <created>1637607536727</created>
@@ -156,5 +146,9 @@
     <MESSAGE value="Git ignore." />
     <MESSAGE value="Added Hunter and shooting mechanic." />
     <option name="LAST_COMMIT_MESSAGE" value="Added Hunter and shooting mechanic." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
