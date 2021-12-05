@@ -25,6 +25,6 @@ texture = ExtResource( 5 )
 SearchRadius = 100
 
 [node name="DieOnHunger" parent="." index="6" instance=ExtResource( 7 )]
-TimeBeforeHungryDeath = 10.0
+TimeBeforeHungryDeath = 20.0
 
 [editable path="DieOnHit"]

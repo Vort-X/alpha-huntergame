@@ -22,7 +22,7 @@ namespace HunterGame.DeathScenarios
 			_gameStateManager = GetNode<GameStateManager>("/root/GameStateManager");
 			_wolf = GetParent<Wolf>();
 			ResetTimer();
-			//((ChasePray)_wolf._chasePreyBehaviour).OnBiteRange += ResetTimer;
+			_wolf.GetNode<ChasePray>("ChasePray").OnBiteRange += ResetTimer;
 		}
 
 		private void ResetTimer(object sender, EventArgs e)

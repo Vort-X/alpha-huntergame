@@ -24,11 +24,11 @@ position = Vector2( 624, 132 )
 Amount = 5
 
 [node name="WolfPopulator" parent="." instance=ExtResource( 1 )]
-position = Vector2( 991, 549 )
+position = Vector2( 990, 541 )
 Amount = 2
 
 [node name="DeerPopulator" parent="." instance=ExtResource( 3 )]
-position = Vector2( 177, 568 )
+position = Vector2( 271, 533 )
 Amount = 4
 
 [editable path="Hunter"]
