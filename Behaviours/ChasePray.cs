@@ -1,4 +1,4 @@
-﻿using Godot;
+using Godot;
 using HunterGame.Animals;
 using HunterGame.Animals.Population;
 using HunterGame.Movement;
@@ -10,38 +10,28 @@ using System.Threading.Tasks;
 
 namespace HunterGame.Behaviours
 {
-    public class ChasePray : Node, IBehaviour
-    {
-        private List<Prey> preys;
+	public class ChasePray : SearchTarget, IBehaviour
+	{
+		private Population populataion;
+		public event EventHandler OnBiteRange;
+		[Export] public int BiteRange { get; set; }
 
-        public override void _Ready()
-        {
-            preys = GetNode<Population>("Population").Preys;
-        }
+		public override void _Ready()
+		{
+			populataion = GetNode<Population>("/root/Population");
+		}
 
-        public Vector2 Target(Vector2 position, Vector2 direction)
-        {
-            Prey closestPrey = ClosestVisiblePray(position);
-            return closestPrey != null ? closestPrey.GlobalPosition - position : direction;
-        }
+		public Vector2 Target(Vector2 position, Vector2 direction)
+		{
+			GameActor target = NearestTargetPosition(position, populataion.GetAllPrays());
+			if(target != null) CheckIfTargetOnBiteRange(position, target);
+			return target == null ? direction : (target.GlobalPosition - position).Normalized();
+		}
 
-        private Prey ClosestVisiblePray(Vector2 position)
-        {
-            Prey closest = null;
-            double closestDistance = 0;
-            foreach (Prey p in preys)
-            {
-                double distanceToPrey = Math.Sqrt(Math.Pow(p.GlobalPosition.x - position.x, 2) + Math.Pow(p.GlobalPosition.y - position.y, 2));
-                if (closest == null
-                    || (distanceToPrey < 110
-                    && closestDistance > distanceToPrey))
-                {
-                    closest = p;
-                    closestDistance = distanceToPrey;
-                }
-            }
-
-            return closest;
-        }
-    }
+		private void CheckIfTargetOnBiteRange(Vector2 position, GameActor target)
+		{
+			if (FindDistanceToTarget(position, target.GlobalPosition) <= BiteRange) 
+				OnBiteRange?.Invoke(this, new GameActorEventArg(target));
+		}
+	}
 }

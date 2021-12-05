@@ -7,18 +7,6 @@
 
 [node name="World" type="Node2D"]
 
-[node name="RabbitPopulator" parent="." instance=ExtResource( 2 )]
-position = Vector2( 581.052, 159.119 )
-Amount = 5
-
-[node name="WolfPopulator" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1078.75, 567.843 )
-Amount = 2
-
-[node name="DeerPopulator" parent="." instance=ExtResource( 3 )]
-position = Vector2( 157.687, 584.882 )
-Amount = 4
-
 [node name="Hunter" parent="." instance=ExtResource( 4 )]
 position = Vector2( 584.18, 386.865 )
 collision_layer = 2
@@ -30,5 +18,17 @@ position = Vector2( 0, 2.61212 )
 [node name="Rifle" parent="Hunter" index="1"]
 Ammo = 12
 ReloadTime = 1.0
+
+[node name="RabbitPopulator" parent="." instance=ExtResource( 2 )]
+position = Vector2( 624, 132 )
+Amount = 5
+
+[node name="WolfPopulator" parent="." instance=ExtResource( 1 )]
+position = Vector2( 991, 549 )
+Amount = 2
+
+[node name="DeerPopulator" parent="." instance=ExtResource( 3 )]
+position = Vector2( 177, 568 )
+Amount = 4
 
 [editable path="Hunter"]

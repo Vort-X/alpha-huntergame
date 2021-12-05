@@ -1,8 +1,10 @@
+using HunterGame;
+using HunterGame.Animals.Population;
 using System;
 
 namespace Godot
 {
-	public class Hunter : KinematicBody2D
+	public class Hunter : GameActor
 	{
 		[Export] public float MaxSpeed { get; set; } = 400f;
 		[Export] public float Acceleration = 2000f;
@@ -16,6 +18,7 @@ namespace Godot
 		public override void _Ready()
 		{
 			_sprite = GetNode<Sprite>("Sprite");
+			GetNode<Population>("/root/Population").AddHunter(this);
 		}
 
 		public override void _PhysicsProcess(float delta)

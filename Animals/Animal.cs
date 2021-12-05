@@ -2,7 +2,7 @@ using Godot;
 
 namespace HunterGame.Animals
 {
-    public class Animal: KinematicBody2D
+    public class Animal: GameActor
     {
         [Export] public float MaxSpeed { get; set; } = 100f;
         [Export] public float Mass { get; set; } = 1f;

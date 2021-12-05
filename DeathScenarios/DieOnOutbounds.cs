@@ -2,6 +2,7 @@ using Godot;
 using System;
 using HunterGame.Animals;
 using HunterGame.GameState;
+using HunterGame;
 
 public class DieOnOutbounds : Node2D
 {
@@ -18,15 +19,7 @@ public class DieOnOutbounds : Node2D
 	{
 		if (_cliff.IsOnCliff(GlobalPosition)) 
 			return;
-		
-		switch (GetParent())
-		{
-			case Animal animal: 
-				_gameStateManager.KillAnimal(animal);
-				break;
-			case Hunter _:
-				_gameStateManager.KillHunter();
-				break;
-		}
+
+		_gameStateManager.Kill(GetParent<GameActor>());
 	}
 }

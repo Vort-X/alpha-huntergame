@@ -1,15 +1,18 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Animals/Animal.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Animals/Wolf/Wolf.cs" type="Script" id=2]
 [ext_resource path="res://Behaviours/AvoidCliff.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Behaviours/Wander.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Animals/Wolf/wolf.png" type="Texture" id=5]
+[ext_resource path="res://Behaviours/ChasePrey.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Behaviours/DieOnHunger.tscn" type="PackedScene" id=7]
 
 [node name="Wolf" instance=ExtResource( 1 )]
 scale = Vector2( 0.07, 0.07 )
 script = ExtResource( 2 )
-Mass = 5.0
+MaxSpeed = 70.0
+Mass = 3.0
 
 [node name="Sprite" parent="." index="0"]
 texture = ExtResource( 5 )
@@ -17,5 +20,11 @@ texture = ExtResource( 5 )
 [node name="AvoidCliff" parent="." index="3" instance=ExtResource( 3 )]
 
 [node name="Wander" parent="." index="4" instance=ExtResource( 4 )]
+
+[node name="ChasePray" parent="." index="5" instance=ExtResource( 6 )]
+SearchRadius = 100
+
+[node name="DieOnHunger" parent="." index="6" instance=ExtResource( 7 )]
+TimeBeforeHungryDeath = 10.0
 
 [editable path="DieOnHit"]

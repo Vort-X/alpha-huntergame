@@ -1,5 +1,4 @@
 using Godot;
-using HunterGame.Animals;
 using HunterGame.Animals.Population;
 using HunterGame.Movement;
 using System;
@@ -10,8 +9,7 @@ using System.Threading.Tasks;
 
 namespace HunterGame.Behaviours
 {
-
-	public class RunFromEnemy : SearchTarget, IBehaviour
+	public class RunFromAll : SearchTarget, IBehaviour
 	{
 		private Population populitaion;
 
@@ -22,8 +20,11 @@ namespace HunterGame.Behaviours
 
 		public Vector2 Target(Vector2 position, Vector2 direction)
 		{
-			GameActor target = NearestTargetPosition(position, populitaion.GetAllEnemies());
-			return target == null ? direction :  (position - target.GlobalPosition).Normalized();
+			GameActor target = NearestTargetPosition(position, populitaion.GetAllGameActors());
+			return target == null ? direction : (position - target.GlobalPosition).Normalized();
 		}
+
+
 	}
 }
+

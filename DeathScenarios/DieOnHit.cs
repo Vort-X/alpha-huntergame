@@ -13,6 +13,6 @@ public class DieOnHit : Area2D
 
 	public void OnHit()
 	{
-		_gameStateManager.KillAnimal(GetParent<Animal>());
+		_gameStateManager.Kill(GetParent<Animal>());
 	}
 }

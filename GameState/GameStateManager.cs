@@ -15,7 +15,21 @@ namespace HunterGame.GameState
 			_population = GetNode<Population>("/root/Population");
 		}
 
-		public void KillAnimal(Animal animal)
+		public void Kill(GameActor actor)
+        {
+			switch (actor)
+			{
+				case Animal animal:
+					KillAnimal(animal);
+					break;
+				case Hunter hunt:
+					KillHunter();
+					break;
+
+			}
+		}
+
+		private void KillAnimal(Animal animal)
 		{
 			 switch (animal)
 			{
@@ -30,7 +44,7 @@ namespace HunterGame.GameState
 			animal.QueueFree();
 		}
 
-		public void KillHunter()
+		private void KillHunter()
 		{
 			new List<Predator>(_population.Predators).ForEach(_population.RemovePredator);
 			new List<Prey>(_population.Preys).ForEach(p => _population.RemovePrey(p));
