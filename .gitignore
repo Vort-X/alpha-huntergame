@@ -25,3 +25,6 @@ export_presets.cfg
 .mono/
 data_*/
 mono_*
+
+# Visual Studio files
+.vs/

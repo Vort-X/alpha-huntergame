@@ -21,14 +21,14 @@ ReloadTime = 1.0
 
 [node name="RabbitPopulator" parent="." instance=ExtResource( 2 )]
 position = Vector2( 624, 132 )
-Amount = 5
+Amount = 15
 
 [node name="WolfPopulator" parent="." instance=ExtResource( 1 )]
 position = Vector2( 990, 541 )
-Amount = 2
+Amount = 4
 
 [node name="DeerPopulator" parent="." instance=ExtResource( 3 )]
 position = Vector2( 271, 533 )
-Amount = 4
+Amount = 10
 
 [editable path="Hunter"]

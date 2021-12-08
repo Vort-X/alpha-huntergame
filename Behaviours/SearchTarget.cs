@@ -1,4 +1,4 @@
-﻿using Godot;
+using Godot;
 using HunterGame.Animals.Population;
 using HunterGame.Movement;
 using System;
@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace HunterGame.Behaviours
 {
-    public abstract class SearchTarget : Node
+	public abstract class SearchTarget : Node
 	{
 		[Export] public int SearchRadius { get; set; }
 
 		protected GameActor NearestTargetPosition(Vector2 position, List<GameActor> targets)
-        {
+		{
 			GameActor closest = null;
 			double closestDistance = 0;
 
@@ -34,7 +34,7 @@ namespace HunterGame.Behaviours
 		}
 
 		protected double FindDistanceToTarget(Vector2 position, Vector2 targetPosition)
-        {
+		{
 			return Math.Sqrt(Math.Pow(targetPosition.x - position.x, 2) + Math.Pow(targetPosition.y - position.y, 2));
 
 		}

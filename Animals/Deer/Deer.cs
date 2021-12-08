@@ -11,12 +11,14 @@ namespace HunterGame.Animals.Deer
 		private IBehaviour _wanderBehaviour;
 		private IBehaviour _avoidCliffBehaviour;
 		private IBehaviour _runFromEnemyBehaviour;
+		private IBehaviour _flockBehaviour;
 
 		public override void _Ready()
 		{
 			_wanderBehaviour = GetNode<Wander>("Wander");
 			_avoidCliffBehaviour = GetNode<AvoidCliff>("AvoidCliff");
 			_runFromEnemyBehaviour = GetNode<RunFromEnemy>("RunFromEnemy");
+			_flockBehaviour = GetNode<Flock>("Flock");
 
 			base._Ready();
 		}
@@ -25,8 +27,10 @@ namespace HunterGame.Animals.Deer
 		{
 			return _avoidCliffBehaviour
 					.Target(GlobalPosition, _runFromEnemyBehaviour
-						.Target(GlobalPosition, _wanderBehaviour
-							.Target(GlobalPosition, Velocity)));
+						.Target(GlobalPosition, 
+							(_wanderBehaviour.Target(GlobalPosition, Velocity) + 
+							_flockBehaviour.Target(GlobalPosition, Velocity)).Normalized()
+						));
 
 		}
 	}
