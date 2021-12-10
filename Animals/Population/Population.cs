@@ -9,12 +9,13 @@ namespace HunterGame.Animals.Population
 		private List<Animal> _animals;
 		private List<Predator> _predators;
 		private List<Prey> _preys;
-		private Hunter _hunter;
+		private Hunter.Hunter _hunter;
 
 
 		public List<Animal> Animals => _animals;
 		public List<Predator> Predators => _predators;
 		public List<Prey> Preys => _preys;
+		public Hunter.Hunter Hunter => _hunter;
 
 		public override void _Ready()
 		{
@@ -82,7 +83,7 @@ namespace HunterGame.Animals.Population
 			predator.QueueFree();
 		}
 
-		public void AddHunter(Hunter hunter)
+		public void AddHunter(Hunter.Hunter hunter)
 		{
 			_hunter = hunter;
 		}

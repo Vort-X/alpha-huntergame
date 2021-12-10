@@ -1,8 +1,8 @@
-using HunterGame;
-using HunterGame.Animals.Population;
 using System;
+using Godot;
+using HunterGame.Animals.Population;
 
-namespace Godot
+namespace HunterGame.Hunter
 {
 	public class Hunter : GameActor
 	{
@@ -12,12 +12,14 @@ namespace Godot
 		private Sprite _sprite;
 		
 		public Vector2 Axis = Vector2.Up;
+		public Rifle Rifle { get; private set; }
 
 		public float BodyRotation => Mathf.Deg2Rad(_sprite.RotationDegrees);
 
 		public override void _Ready()
 		{
 			_sprite = GetNode<Sprite>("Sprite");
+			Rifle = GetNode<Rifle>("Rifle");
 			GetNode<Population>("/root/Population").AddHunter(this);
 		}
 

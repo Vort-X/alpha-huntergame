@@ -31,7 +31,7 @@ namespace HunterGame.Animals.Population
 				var position = GenerateRandomPoint();
 				var animal = Scene.Instance<T>();
 				animal.GlobalPosition = position;
-
+				
 				switch (animal)
 				{
 					case Prey prey:

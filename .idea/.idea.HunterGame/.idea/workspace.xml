@@ -4,11 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="947e4883-87bc-4f3c-87fe-92b92f887b93" name="Changes" comment="Added Hunter and shooting mechanic.">
-      <change afterPath="$PROJECT_DIR$/Animals/Animal.tscn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DieOnOutbounds.tscn" afterDir="false" />
+    <list default="true" id="947e4883-87bc-4f3c-87fe-92b92f887b93" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Music/BackgroundMusic.tscn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Music/melody-of-nature-main-6672.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Music/melody-of-nature-main-6672.mp3.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI/Fonts/theboldfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UiListener.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HunterGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HunterGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animals/Animal.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Animal.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animals/Deer/Deer.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Deer/Deer.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animals/Population/Population.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Population/Population.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animals/Population/Populator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Population/Populator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animals/Rabbit/Rabbit.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Rabbit/Rabbit.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animals/Wolf/Wolf.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Wolf/Wolf.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DieOnHit.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/DieOnHit.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameState/GameStateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameState/GameStateManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hunter/Hunter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hunter/Hunter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hunter/Rifle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hunter/Rifle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Terrain/Cliff.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Terrain/Cliff.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/World.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/World.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +42,6 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/misha/HunterGame/GameState/GameStateManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/92218043474744ea9d64d27064c35dcb46b600/A3/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/822117b834e54013b45274efa5d7ea92251200/e7/2b95711a/CircleShape2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/822117b834e54013b45274efa5d7ea92251200/43/4d7ecbd3/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
@@ -65,7 +79,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Editor" type="GODOT_DEBUG_RUN_CONFIGURATION" factoryName="Start and Debug">
-      <option name="EXE_PATH" value="/private/var/folders/jp/tj29p5j92dl13_d_2v2r3_k00000gn/T/AppTranslocation/5F504A69-BEF5-4335-910D-EEBE55177E28/d/Godot_mono.app/Contents/MacOS/Godot" />
+      <option name="EXE_PATH" value="/private/var/folders/jp/tj29p5j92dl13_d_2v2r3_k00000gn/T/AppTranslocation/B8A92C61-40BF-40BF-B0AF-75A2CE3D58F3/d/Godot_mono.app/Contents/MacOS/Godot" />
       <option name="PROGRAM_PARAMETERS" value="--path &quot;$PROJECT_DIR$&quot; --editor" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -75,7 +89,7 @@
       </method>
     </configuration>
     <configuration name="Player" type="GODOT_DEBUG_RUN_CONFIGURATION" factoryName="Start and Debug">
-      <option name="EXE_PATH" value="/private/var/folders/jp/tj29p5j92dl13_d_2v2r3_k00000gn/T/AppTranslocation/5F504A69-BEF5-4335-910D-EEBE55177E28/d/Godot_mono.app/Contents/MacOS/Godot" />
+      <option name="EXE_PATH" value="/private/var/folders/jp/tj29p5j92dl13_d_2v2r3_k00000gn/T/AppTranslocation/B8A92C61-40BF-40BF-B0AF-75A2CE3D58F3/d/Godot_mono.app/Contents/MacOS/Godot" />
       <option name="PROGRAM_PARAMETERS" value="--path &quot;$PROJECT_DIR$&quot;" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -96,7 +110,9 @@
       <workItem from="1637263291651" duration="16794000" />
       <workItem from="1637494541237" duration="21125000" />
       <workItem from="1637780896101" duration="10536000" />
-      <workItem from="1638299007437" duration="970000" />
+      <workItem from="1638299007437" duration="1584000" />
+      <workItem from="1638609805558" duration="2272000" />
+      <workItem from="1639069369334" duration="4740000" />
     </task>
     <task id="LOCAL-00001" summary="Init.">
       <created>1637607536727</created>
@@ -119,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637868083273</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix missing scenes">
+      <created>1638300001120</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638300001120</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +168,8 @@
     <MESSAGE value="Init." />
     <MESSAGE value="Git ignore." />
     <MESSAGE value="Added Hunter and shooting mechanic." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Hunter and shooting mechanic." />
+    <MESSAGE value="fix missing scenes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix missing scenes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

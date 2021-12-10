@@ -19,12 +19,15 @@ config/icon="res://icon.png"
 Cliff="*res://Terrain/Cliff.tscn"
 Population="*res://Animals/Population/Population.tscn"
 GameStateManager="*res://GameState/GameStateManager.cs"
+BackgroundMusic="*res://Music/BackgroundMusic.tscn"
 
 [display]
 
-window/size/width=1280
-window/size/height=750
+window/size/width=1920
+window/size/height=1125
 window/size/resizable=false
+window/size/test_width=1280
+window/size/test_height=750
 window/stretch/mode="2d"
 
 [physics]

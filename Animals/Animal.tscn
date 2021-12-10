@@ -8,6 +8,8 @@
 [node name="Sprite" type="Sprite" parent="."]
 
 [node name="DieOnHit" parent="." instance=ExtResource( 1 )]
+collision_layer = 2
+collision_mask = 2
 
 [node name="DieOnOutbounds" parent="." instance=ExtResource( 4 )]
 

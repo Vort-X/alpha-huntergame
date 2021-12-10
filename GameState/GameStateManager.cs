@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Godot;
@@ -9,20 +10,20 @@ namespace HunterGame.GameState
 	public class GameStateManager: Node
 	{
 		private Population _population;
-		
+		public event Action OnHunterDeath;
 		public override void _Ready()
 		{
 			_population = GetNode<Population>("/root/Population");
 		}
 
 		public void Kill(GameActor actor)
-        {
+		{
 			switch (actor)
 			{
 				case Animal animal:
 					KillAnimal(animal);
 					break;
-				case Hunter hunt:
+				case Hunter.Hunter hunt:
 					KillHunter();
 					break;
 
@@ -47,7 +48,7 @@ namespace HunterGame.GameState
 		private void KillHunter()
 		{
 			new List<Predator>(_population.Predators).ForEach(_population.RemovePredator);
-			new List<Prey>(_population.Preys).ForEach(p => _population.RemovePrey(p));
+			new List<Prey>(_population.Preys).ForEach(_population.RemovePrey);
 
 			GetTree().ReloadCurrentScene();
 		}
