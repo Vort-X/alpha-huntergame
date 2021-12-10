@@ -4,26 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="947e4883-87bc-4f3c-87fe-92b92f887b93" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Music/BackgroundMusic.tscn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Music/melody-of-nature-main-6672.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Music/melody-of-nature-main-6672.mp3.import" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/Fonts/theboldfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UiListener.cs" afterDir="false" />
+    <list default="true" id="947e4883-87bc-4f3c-87fe-92b92f887b93" name="Changes" comment="Made bigger map and added ui bullets.">
+      <change afterPath="$PROJECT_DIR$/.README" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HunterGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HunterGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animals/Animal.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Animal.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animals/Deer/Deer.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Deer/Deer.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animals/Population/Population.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Population/Population.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animals/Population/Populator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Population/Populator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animals/Rabbit/Rabbit.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Rabbit/Rabbit.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animals/Wolf/Wolf.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Wolf/Wolf.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DieOnHit.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/DieOnHit.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameState/GameStateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameState/GameStateManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hunter/Hunter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hunter/Hunter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hunter/Rifle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hunter/Rifle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Terrain/Cliff.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Terrain/Cliff.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/World.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/World.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hunter/Hunter.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Hunter/Hunter.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HunterGame.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HunterGame.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +45,7 @@
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -79,7 +65,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Editor" type="GODOT_DEBUG_RUN_CONFIGURATION" factoryName="Start and Debug">
-      <option name="EXE_PATH" value="/private/var/folders/jp/tj29p5j92dl13_d_2v2r3_k00000gn/T/AppTranslocation/B8A92C61-40BF-40BF-B0AF-75A2CE3D58F3/d/Godot_mono.app/Contents/MacOS/Godot" />
+      <option name="EXE_PATH" value="/private/var/folders/jp/tj29p5j92dl13_d_2v2r3_k00000gn/T/AppTranslocation/B1096FE5-0410-47A8-9E2C-98EA3A4D1649/d/Godot_mono.app/Contents/MacOS/Godot" />
       <option name="PROGRAM_PARAMETERS" value="--path &quot;$PROJECT_DIR$&quot; --editor" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -89,7 +75,7 @@
       </method>
     </configuration>
     <configuration name="Player" type="GODOT_DEBUG_RUN_CONFIGURATION" factoryName="Start and Debug">
-      <option name="EXE_PATH" value="/private/var/folders/jp/tj29p5j92dl13_d_2v2r3_k00000gn/T/AppTranslocation/B8A92C61-40BF-40BF-B0AF-75A2CE3D58F3/d/Godot_mono.app/Contents/MacOS/Godot" />
+      <option name="EXE_PATH" value="/private/var/folders/jp/tj29p5j92dl13_d_2v2r3_k00000gn/T/AppTranslocation/B1096FE5-0410-47A8-9E2C-98EA3A4D1649/d/Godot_mono.app/Contents/MacOS/Godot" />
       <option name="PROGRAM_PARAMETERS" value="--path &quot;$PROJECT_DIR$&quot;" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -112,7 +98,8 @@
       <workItem from="1637780896101" duration="10536000" />
       <workItem from="1638299007437" duration="1584000" />
       <workItem from="1638609805558" duration="2272000" />
-      <workItem from="1639069369334" duration="4740000" />
+      <workItem from="1639069369334" duration="6216000" />
+      <workItem from="1639173609674" duration="954000" />
     </task>
     <task id="LOCAL-00001" summary="Init.">
       <created>1637607536727</created>
@@ -142,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638300001120</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Made bigger map and added ui bullets.">
+      <created>1639160437506</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1639160437506</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +163,8 @@
     <MESSAGE value="Git ignore." />
     <MESSAGE value="Added Hunter and shooting mechanic." />
     <MESSAGE value="fix missing scenes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix missing scenes" />
+    <MESSAGE value="Made bigger map and added ui bullets." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made bigger map and added ui bullets." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
